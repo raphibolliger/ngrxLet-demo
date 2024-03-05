@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+
+    background-color: gray;
+
+    > span,
+    > div {
+        background-color: white;
+        padding: 0.5rem;
+
+        &.correct {
+            color: green
+        }
+
+        &.wrong {
+            color: red;
+        }
+
+        .value {
+            font-size: 200%;
+            padding: 0.5rem;
+
+            background-color: whitesmoke;
+            border-radius: 0.35rem;
+        }
+    }
+
+    img {
+        width: 50%;
+    }
+}
